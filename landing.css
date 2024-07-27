@@ -1,0 +1,403 @@
+/* Basic styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #373232;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+
+  background-color: transparent;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Aligns items to the ends */
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+
+.navbar .left-menu {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+
+.navbar .right-menu {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
+a {
+  margin: auto 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.navbar a {
+  margin: auto 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: rgb(255, 0, 0);
+}
+.head {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("train.jpeg");
+  background-blend-mode: multiply;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+
+  height: 95vh;
+  color: #fff;
+  display: flex;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fade-in 2s forwards;
+  align-self: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.contact-us {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-us h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-us p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-us li {
+  margin-bottom: 10px;
+}
+
+.contact-us strong {
+  font-weight: bold;
+}
+
+/* Optional: Add hover effect to the contact information */
+.contact-us ul li:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Sliding menu */
+.slide-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: #f1f1f1;
+  transform: translateX(-200px);
+  transition: transform 0.3s ease;
+}
+
+.slide-menu.show {
+  transform: translateX(0);
+}
+
+.slide-menu ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+
+.slide-menu ul li {
+  margin-bottom: 10px;
+}
+
+/* Hide slide menu icon on larger screens */
+@media (min-width: 768px) {
+  .slide-menu-icon {
+    display: none;
+  }
+  .close-menu-icon {
+    display: none;
+  }
+  .slide-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 18x !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  h3 {
+    font-size: 14px !important;
+  }
+  .navbar {
+    display: none;
+  }
+  /* Sliding menu */
+  .slide-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #323232;
+    opacity: 0.9;
+    transform: translateX(-200px);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    overflow-y: auto; /* Enable scrolling when the content exceeds the height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+
+  .slide-menu.show {
+    transform: translateX(0);
+  }
+
+  .slide-menu ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .slide-menu ul li {
+    margin-bottom: 10px;
+  }
+
+  .slide-menu a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .slide-menu a:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+  }
+
+  /* Close menu icon */
+  .close-menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+  }
+  .slide img {
+    width: 100% !important;
+    height: 350px !important;
+  }
+  .slide {
+    left: 5% !important;
+  }
+  .features {
+    margin-top: 0px !important;
+  }
+}
+
+.slide-menu-links {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+.reserve-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: block;
+  margin: 10px auto;
+}
+
+.reserve-button:hover {
+  background-color: #0056b3;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  height: 400px;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 90%;
+  height: 400px;
+  left: 9.5%;
+}
+
+.slide img {
+  width: 90%;
+  height: 400px;
+}
+
+.caption {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  font-size: 18px;
+}
+
+/* CSS Animation */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slideshow Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+.common {
+  background-color: #f8f8f8;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.common h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+.commondestinationcon {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.commondestinationcontainer {
+  color: #ffffff;
+}
+.common p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Colorful styles */
+
+.common {
+  background-image: linear-gradient(to bottom, hsl(192, 100%, 8%), #151f1f);
+  color: #fff;
+}
+
+.common h2 {
+  font-size: 28px;
+}
+
+.common p {
+  font-size: 18px;
+}
+.features {
+  margin-top: 30px;
+  background-color: #dadada;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.features h3 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features ul li {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Colorful styles */
+
+.features ul li:before {
+  content: "\2022";
+  color: #e67e22;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
