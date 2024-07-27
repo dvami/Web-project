@@ -2,4 +2,5 @@
 -front-end:html-css-js </br>      
 -back-end:php </br>      
 -main page:landing.html </br>      
+databasae:mysql  </br>      
 -web.sql file is database of this project </br>      
