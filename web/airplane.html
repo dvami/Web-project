@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Airplane Booking</title>
+    <link rel="stylesheet" href="airplane.css" />
+  </head>
+  <body>
+    <h1>Airplane Booking</h1>
+
+    <h2>Flight Filter</h2>
+    <form id="filterForm">
+      <label for="origin">Origin:</label>
+      <input type="text" id="origin" name="origin" required />
+
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required />
+
+      <label for="departure">Departure Date:</label>
+      <input type="date" id="departure" name="departure" required />
+
+      <label for="return">Return Date:</label>
+      <input type="date" id="return" name="return" />
+
+      <label for="passengers">Passengers:</label>
+      <input type="number" id="passengers" name="passengers" required />
+
+      <button type="submit">Filter Flights</button>
+    </form>
+
+    <h2 id="flightSearchResults">Flight Search Results</h2>
+    <div id="searchResults"></div>
+
+    <script src="airplane.js"></script>
+  </body>
+</html>

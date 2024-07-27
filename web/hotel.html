@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel and Suite Search Bar</title>
+    <link rel="stylesheet" href="hotel.css" />
+  </head>
+  <body>
+    <h1>Hotel and Suite Search Bar</h1>
+
+    <div class="search-bar">
+      <input type="text" id="name-filter" placeholder="Name..." />
+      <input type="text" id="city-filter" placeholder="City..." />
+      <input
+        id="arrival-filter"
+        type="text"
+        onfocus="(this.type='date')"
+        onblur="(this.type='text')"
+        placeholder="Arrival time"
+      />
+      <input
+        id="departure-filter"
+        type="text"
+        onfocus="(this.type='date')"
+        onblur="(this.type='text')"
+        placeholder="Departure time"
+      />
+
+      <input type="text" id="guests-filter" placeholder="Guests..." />
+      <button id="search-button">Search</button>
+    </div>
+
+    <div id="results">
+      <!-- Search results will be displayed here -->
+    </div>
+
+    <script src="hotel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Styling the container */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styling the container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the heading */
+h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Styling the form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling the labels */
+label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styling the input fields */
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Styling the submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #2e8b57;
+}
+
+/* Styling the password strength and number match indicators */
+span {
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+span#password-strength {
+  color: #828282;
+}
+
+span#number-match {
+  color: #f44336;
+}
+
+/* Styling the password strength indicator based on strength */
+span#password-strength[data-strength="1"] {
+  color: #f44336;
+}
+
+span#password-strength[data-strength="2"] {
+  color: #ff9800;
+}
+
+span#password-strength[data-strength="3"] {
+  color: #4caf50;
+}
+
+span#password-strength[data-strength="4"] {
+  color: #008000;
+}
+
+/* Adding some additional colors */
+.container {
+  background-color: white;
+}
+
+h2 {
+  color: #ff5733;
+}
+
+label {
+  color: #8b008b;
+}
+
+input {
+  background-color: #e6e6fa;
+  color: #191970;
+}
+
+input[type="submit"] {
+  background-color: #4169e1;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e90ff;
+}
+
+span#password-strength {
+  color: #20b2aa;
+}
+
+span#number-match {
+  color: #ff1493;
+}
+
+span#password-strength[data-strength="1"] {
+  color: #ff5733;
+}
+
+span#password-strength[data-strength="2"] {
+  color: #ffa500;
+}
+
+span#password-strength[data-strength="3"] {
+  color: #32cd32;
+}
+
+span#password-strength[data-strength="4"] {
+  color: #008000;
+}
+
+/* Styling for screens larger than 768px */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Styling for screens larger than 992px */
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+/* Styling for screens larger than 1200px */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Styling the heading */
+h2 {
+  font-size: 2rem;
+}
+
+/* Styling the labels */
+label {
+  font-size: 1.2rem;
+}
+
+/* Styling the input fields */
+input {
+  font-size: 1rem;
+}
+
+/* Styling the submit button */
+input[type="submit"] {
+  font-size: 1.2rem;
+}
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
