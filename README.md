@@ -1,5 +1,5 @@
-this project is a sample booking website for the university web programming course .
-front-end:html-css-js
-back-end:php
-main page:landing.html
-web.sql file is database
+-this project is a sample booking website for the university web programming course </br>           
+-front-end:html-css-js </br>      
+-back-end:php </br>      
+-main page:landing.html </br>      
+-web.sql file is database of this project </br>      
